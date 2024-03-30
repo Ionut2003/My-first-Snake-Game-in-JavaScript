@@ -1,63 +1,45 @@
-#theCanvas{
-	border: 2px solid black;
-	position: relative;
-	top: 0;
-	background-color: white;
-}
-button{
-	width: 0px;
-	height: 0px;
-}
-#Left{
-	position: relative;
-	right: 15px;
-	width: 0;
-	height: 0;
-	border-right: 50px solid black;
-	border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-}
-#Up{
-	position: relative;
-	bottom: 15px;
-	left: 10%;
-	width: 0;
-	height: 0;
-	border-bottom: 50px solid black;
-	border-right: 40px solid transparent;
-	border-left: 40px solid transparent;
-	border-top: 0px;
-}
-#Down{
-	position: relative;
-	top: 5px;
-	left: 10%;
-	width: 0;
-	height: 0;
-	border-top: 50px solid black;
-	border-right: 40px solid transparent;
-	border-left: 40px solid transparent;
-	border-bottom: 0px;
-}
-#Right{
-	position: relative;
-	left: 10px;
-	width: 0;
-	height: 0;
-	border-left: 50px solid black;
-	border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-	border-right: 0px;
-}
-.score{
-	font-family: Bold;
-	font-size: 30px;
-	color: white;
+/* RESET */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	background-color: #CC0000;
+	height: 100vh;
+	display: flex;
 }
-#background{
+
+/* MODIFYING BODY ELEMENTS */
+#theCanvas{
+	border: 2px solid black;
+	background-image: url("grass-lawn-abstract-seamless-background-game-asset-pattern-natural-field-herbs-top-view_191307-627.avif");
+	margin: auto;
+	width: 90%;
+	
+}
+.score{
+	position: absolute;
+	font-family: Bold;
+	font-size: 30px;
+	color: white;
+	height: 30px;
+	top: 10px;
+	left: 10px;
+}
+
+#highScore{
+	position: absolute;
+	font-family: Bold;
+	font-size: 30px;
+	color: white;
+	height: 30px;
+	right: 10px;
+	top: 10px;
+}
+/* MENU APPEARED AFTER LOSING */
+
+.menu {
 	background-color: black;
 	width: 300px;
 	height: 350px;
@@ -84,25 +66,4 @@ body{
 	text-align: center;
 	color: white;
 	font-size: 50px;
-}
-#displayScore{
-	width: 50%;
-	height: 42px;
-	background-color: blue;
-	position: fixed;
-	bottom: -300px;
-	border: 1px solid blue;
-	line-height: 42px;
-	font-size: 25px;
-}
-#displayHighScore{
-	background-color: blue;
-	height: 42px;
-	line-height: 42px;
-	font-size: 25px;
-	width: 50%;
-	position: fixed;
-	bottom: -300px;
-	right: 10px;
-	border: 1px solid blue;
 }

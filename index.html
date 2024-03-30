@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Snake</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
-  </head>
-  <body id = "Body">
-  	<div id = "displayScore"></div>
-  	<div id = "displayHighScore"></div>
-  	<div class = "score"></div>
-  	<canvas width = "300" height = "270" id = "theCanvas"></canvas>
-  	<table class = "border">
-  		<tr>
-  		<td class = "borders">
-  			<button class = "b" id = "Left"></button>
-  		</td>
-  		<td class = "borders">
-  			<button class = "b" id = "Up"></button>
-  			<button class = "b" id = "Down"></button>
-  		</td>
-  		<td class = "borders">
-  			<button class = "b" id = "Right"></button>
-  			</td>
-  			</tr>
-  			</table>
+</head>
+<body>
+  	<p class = "score"></p>
+	<p id = "highScore"></p>
+  	<canvas id = "theCanvas"></canvas>
   	<div id = "background" class = "menu">
-  		<div id = "gameOver" class = "menu">Game Over</div>
-  		<div id = "retry" class = "menu">Retry</div>
+  		<div id = "gameOver">Game Over</div>
+  		<div id = "retry">Retry</div>
   	</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src = "script.js"></script>
-  </body>
+   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src = "script.js"></script>
+</body>
 </html>
