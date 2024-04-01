@@ -7,14 +7,21 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  	<p class = "score"></p>
-	<p id = "highScore"></p>
-  	<canvas id = "theCanvas"></canvas>
-  	<div id = "background" class = "menu">
-  		<div id = "gameOver">Game Over</div>
-  		<div id = "retry">Retry</div>
-  	</div>
-   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<audio id = "audio" src="food_G1U6tlb.mp3"></audio>
+  	<p id= "score">Score: 0</p>
+	<p id= "highScore"></p>
+  	<div id = "theCanvas">
+		<div id="snake"></div>
+		<div class = "squares"></div>
+		<div class = "squares"></div>
+		<div class = "squares"></div>
+		<img id = "apple" src="icons8-red-apple-48.png" alt="apple">
+	</div>
+	<div id="pause">
+		<p id="pauseText">PAUSE</p>
+		<p id="resumeText">To resume the game, please click on "ESC" button</p>
+	</div>
+   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>>
 	<script src = "script.js"></script>
 </body>
 </html>
